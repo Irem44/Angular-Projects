@@ -1,0 +1,35 @@
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  "
+>
+  <div class="container">
+    <div>
+      {{ value }}
+    </div>
+    <button
+      class="buttons"
+      style="margin-right: 20px; margin-left: 20px"
+      (click)="tahmin()"
+    >
+      Tahmin Et
+    </button>
+    <button class="buttons" style="margin-right: 20px" (click)="arttir()">
+      Arttır
+    </button>
+    <button class="buttons" (click)="azalt()" style="margin-right: 20px">
+      Azalt
+    </button>
+    <button class="buttons" (click)="reset()">Reset</button>
+  </div>
+
+  <h1 *ngIf="tahminDurumu" style="color: #06923e">
+    Tebrikler Başarılı Bir Tahmin:{{ randomSayi }}
+  </h1>
+  <h1 *ngIf="tahminYapildi" style="color: #ed3500">
+    Birdaha Tahmin de bulunun
+  </h1>
+</div>
