@@ -1,0 +1,36 @@
+.input-area {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.buttons {
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  margin-left: 20px;
+  border: 2px solid #333446;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f8caa;
+  color: #eaefef;
+}
+.input_ {
+  width: 200px;
+  height: 15px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #333446;
+  font-size: 15px;
+  margin-bottom: 10px;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #333446;
+  }
+}
