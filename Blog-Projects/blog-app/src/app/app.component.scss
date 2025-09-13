@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(55, 53, 62);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header nav a {
+  color: #d3dad9;
+  margin-right: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header nav a:hover {
+  border: none;
+  border-bottom: 2px solid #76747d;
+}

@@ -1,5 +1,21 @@
 <div class="listContainer">
-  <ul *ngFor="let word of data_list">
-    <li>{{ word }}</li>
+  <ul
+    *ngFor="let word of data_list; let i = index"
+    style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    "
+  >
+    <li [(ngModel)]="yeniDeger">
+      {{ word }}
+    </li>
+    <input type="text" *ngIf="tf" else #elseMessage />
+    <ng-template #elseMessage></ng-template>
+    <div class="button-container">
+      <i class="fa-solid fa-trash delete_icon" (click)="delete(i)"></i>
+      <i class="fa-solid fa-pen" (click)="updated(i)"></i>
+    </div>
   </ul>
 </div>

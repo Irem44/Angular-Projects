@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.sub_content {
+  width: 80%;
+  height: 200px;
+  border: 3px solid #715a5a;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: #d3dad9;
+}
+.sub_content h1 {
+  margin-bottom: 10px;
+}
+.button {
+  margin-top: 20px;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #715a5a;
+  background-color: #715a5a;
+  border-radius: 10px;
+  color: #d3dad9;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

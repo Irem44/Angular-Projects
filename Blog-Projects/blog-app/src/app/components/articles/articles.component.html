@@ -1,0 +1,8 @@
+<div class="content">
+  <div class="sub_content" *ngFor="let art of list.articleList">
+    <h1>{{ art.title }}</h1>
+
+    <p>{{ art.sub_title }}</p>
+    <a [routerLink]="['/detay', art.id]" class="button">Detayı Gör</a>
+  </div>
+</div>

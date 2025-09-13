@@ -8,4 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ListComponent {
   @Input() data_list: Array<string>;
+  tf: boolean = false;
+  yeniDeger: string;
+  delete(index: number) {
+    this.data_list.splice(index, 1);
+  }
+  updated(index: number) {
+    this.data_list[index] = this.yeniDeger;
+    this.tf = true;
+  }
 }
