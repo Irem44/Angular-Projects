@@ -1,0 +1,49 @@
+.details_container {
+  width: 100%;
+  height: 89vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 50px;
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .numaralar {
+    width: 500px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    text-align: center;
+
+    div {
+      border: 1px solid black;
+      padding-top: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    div:hover {
+      background-color: #be3d2a;
+      color: #fff;
+    }
+  }
+  .button {
+    margin-top: 50px;
+    width: 500px;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,76 @@
+.table_content {
+  width: 100%;
+  height: 500px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+
+  .basket_product {
+    width: 500px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 40px;
+    gap: 50px;
+  }
+  .inf_content {
+    width: 250px;
+    height: 120px;
+    padding: 10px;
+
+    p {
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    .adet {
+      width: 50px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.toplam_fiyat {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(72, 71, 71, 0.5);
+
+  gap: 20px;
+  div {
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .alisverisi_tamamla {
+    background-color: #be3d2a;
+    color: #fff;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+}

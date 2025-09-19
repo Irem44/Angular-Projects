@@ -1,0 +1,30 @@
+<div style="padding: 30px" class="customer_container">
+  <h2 style="font-size: 25px; margin-bottom: 20px">Müşteri Listesi</h2>
+  <div class="input_container">
+    <input type="text" class="customer_input" placeholder="Adı" #txtname />
+    <input
+      type="text"
+      class="customer_input"
+      placeholder="Soyadı"
+      #txtsurname
+    />
+    <button
+      class="customer_add_button"
+      (click)="
+        addCustomer(txtname.value, txtsurname.value, txtname, txtsurname)
+      "
+    >
+      Ekle
+    </button>
+  </div>
+
+  <div
+    *ngFor="let customer of customerService.customerListGet; let i = index"
+    class="sub_customer_container"
+  >
+    <div class="customer_content" (click)="deleteByIndex(i)">
+      {{ customer.name }} {{ customer.surname }}
+      <div><i class="fa-solid fa-trash"></i></div>
+    </div>
+  </div>
+</div>

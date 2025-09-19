@@ -1,0 +1,41 @@
+.table_content {
+  width: 500px;
+  height: 500px;
+  padding: 80px;
+
+  .favorites_product {
+    width: 650px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    padding: 40px;
+    gap: 50px;
+  }
+  .inf_content {
+    width: 250px;
+    height: 120px;
+    padding: 10px;
+    p {
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    .adet {
+      width: 50px;
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+  .sepet_button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+  }
+}

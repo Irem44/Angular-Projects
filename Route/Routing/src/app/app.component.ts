@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { Component } from '@angular/core';
     <a routerLink="products" routerLinkActive="active">Products</a>
     <!-- <a routerLink="a/b/c">A/B/C</a> -->
     <a [routerLink]="['a', 'b', 'c']" routerLinkActive="active">A/B/C</a>
+
     <br />
     <hr />
     <!-- Yeni rotaya uygun component'in yükleneceği alan için -->

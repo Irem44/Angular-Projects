@@ -1,0 +1,20 @@
+<div class="product_container">
+  <div
+    class="product_component"
+    *ngFor="let product of productService.getProduct"
+  >
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.price }} TL</p>
+    <div class="product_component_image">
+      <img
+        src="{{ product.imgUrl }}"
+        alt="resim bulunamadı"
+        width="200px"
+        height="150px"
+      />
+    </div>
+
+    <a [routerLink]="['/products', product.id]" class="detay">Detay Bilgisi</a>
+    <!-- favorilere ekleme butonu -->
+  </div>
+</div>

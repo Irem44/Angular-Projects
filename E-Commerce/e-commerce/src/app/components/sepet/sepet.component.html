@@ -1,0 +1,33 @@
+<h1 style="position: relative; left: 80px; top: 50px">Sepet</h1>
+<div class="table_content">
+  <div *ngFor="let spt of sepetService.sepetListGet" class="basket_product">
+    <div>
+      <img
+        src="{{ spt.imgUrl }}"
+        alt="resim bulunamadı"
+        width="100px"
+        height="100px"
+        style="border-radius: 100%"
+      />
+    </div>
+
+    <div class="inf_content">
+      <p>{{ spt.name }}</p>
+      <p>{{ spt.price }} TL</p>
+      <label>Adet</label>
+      <input type="number" class="adet" value="1" min="0" />
+    </div>
+  </div>
+</div>
+<div class="toplam_fiyat">
+  <div><h4>Sipariş Özeti</h4></div>
+  <div>
+    <p>Sepet Tutarı:</p>
+    <p>{{ sepetTutari() }} TL</p>
+  </div>
+  <div>
+    <p>Toplam Tutarı:</p>
+    <p>{{ sepetTutari() }} TL</p>
+  </div>
+  <div class="alisverisi_tamamla"><p>Alışverişi tamamla</p></div>
+</div>

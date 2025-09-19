@@ -1,0 +1,30 @@
+<div class="table_content">
+  <h2 style="margin-bottom: 30px">Favori Parçalarınız</h2>
+  <div
+    *ngFor="let fv of favoritesService.favoritesGet"
+    class="favorites_product"
+  >
+    <div>
+      <img
+        src="{{ fv.imgUrl }}"
+        alt="resim bulunamadı"
+        width="100px"
+        height="100px"
+        style="border-radius: 100%"
+      />
+    </div>
+
+    <div class="inf_content">
+      <p>{{ fv.name }}</p>
+      <p>{{ fv.price }} TL</p>
+      <label>Adet</label>
+      <input type="number" class="adet" value="1" min="0" />
+    </div>
+    <button
+      class="sepet_button"
+      (click)="addBaskettoFavorites(fv.id, fv.name, fv.price, fv.imgUrl)"
+    >
+      Sepete Ekle
+    </button>
+  </div>
+</div>

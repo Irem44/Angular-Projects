@@ -1,0 +1,40 @@
+<div *ngFor="let product of productService.getProduct">
+  <div *ngIf="product.id === id" class="details_container">
+    <div class="details_img_container">
+      <img
+        src="{{ product.imgUrl }}"
+        alt="resim bulunamadı"
+        width="500px"
+        height="500px"
+        style="border-radius: 10px"
+      />
+    </div>
+    <div>
+      <h1>{{ product.name }}</h1>
+      <p>{{ product.price }} TL</p>
+      <div class="numaralar">
+        <div>38</div>
+        <div>39</div>
+        <div>40</div>
+        <div>41</div>
+        <div>42</div>
+      </div>
+      <button
+        type="button"
+        class="button"
+        (click)="
+          add_Basket(product.id, product.name, product.price, product.imgUrl)
+        "
+      >
+        Sepete Ekle
+      </button>
+      <!-- favoriler -->
+      <i
+        class="fa-solid fa-heart"
+        (click)="
+          addFavorite(product.id, product.imgUrl, product.name, product.price)
+        "
+      ></i>
+    </div>
+  </div>
+</div>
